@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="theme.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap -->
+    <header>
+        <div class="header-container">
+            <img src="Picture1.png" alt="Ateeq Logo" class="logo">
+            <h1>Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="myaccount.html">My Account</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <style>
+        .btn-primary {
+            background-color: #4a2c2a !important;
+            border-color: #4a2c2a !important;
+        }
+        .btn-primary:hover {
+            background-color: #3e251f !important;
+            border-color: #3e251f !important;
+        }
+        .card-img-top {
+            width: 100%;             
+            height: 350px;           
+            object-fit: cover;        
+        }
+        
+        </style>
+        
+    </header> 
+</head>
+<body>
+       
+
+    <main class="container mt-4">
+        
+        <div class="filter-section mb-4">
+            <h2>Filter Products</h2>
+            <form class="row g-3">
+                <div class="col-md-4">
+                    <label for="categoryFilter" class="form-label">Category</label>
+                    <select id="categoryFilter" class="form-select">
+                        <option value="all">All</option>
+                        <option value="furniture">Furniture</option>
+                        <option value="jewelry">Devices</option>
+                        <option value="collectibles">paintings</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="priceFilter" class="form-label">Price</label>
+                    <select id="priceFilter" class="form-select">
+                        <option value="all">All</option>
+                        <option value="low-high">Low to High</option>
+                        <option value="high-low">High to Low</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="popularityFilter" class="form-label">Popularity</label>
+                    <select id="popularityFilter" class="form-select">
+                        <option value="all">All</option>
+                        <option value="most-popular">Most Popular</option>
+                        <option value="new-arrivals">New Arrivals</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Apply Filters</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="row">
+            
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="p1.jpg" class="card-img-top" alt="Antique Item">
+                    <div class="card-body">
+                        <h5 class="card-title">Terracotta Plate</h5>
+                        <p class="card-text"> Terracotta plate with feet in the shape of an animal </p>
+                        <p class="card-text"><strong>Price:</strong> 590.750 OR </p>
+                        <a href="product1.html" class="btn btn-primary" style="display: grid;">View Details</a>
+                        <a href="myaccount.html" class="btn btn-secondary mt-2" style="display: grid;">Add to Wishlist</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="p2.jpg" class="card-img-top" alt="Antique Item">
+                    <div class="card-body">
+                        <h5 class="card-title">Art Déco Radio</h5>
+                        <p class="card-text">Brand is Philips by Harrods Ltd. - Bakelit Model is 834C (England) - Art Déco</p>
+                        <p class="card-text"><strong>Price:</strong> 250.000 OR </p>
+                        <a href="product2.html" class="btn btn-primary" style="display: grid;">View Details</a>
+                        <a href="myaccount.html" class="btn btn-secondary mt-2" style="display: grid;">Add to Wishlist</a>
+                    </div>
+                </div>
+            </div><div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="P3.png" class="card-img-top" alt="Antique Item">
+                    <div class="card-body">
+                        <h5 class="card-title">vintage old stone</h5>
+                        <p class="card-text">Stone very fine eagle shapes vessel with lid</p>
+                        <p class="card-text"><strong>Price:</strong> 1966.460 OR </p>
+                        <a href="product3.html" class="btn btn-primary" style="display: grid;">View Details</a>
+                        <a href="myaccount.html" class="btn btn-secondary mt-2" style="display: grid;">Add to Wishlist</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="p4.png" class="card-img-top" alt="Antique Item">
+                    <div class="card-body">
+                        <h5 class="card-title">old arabic Teapot </h5>
+                        <p class="card-text">An ancient Arabic teapot containing plant inscriptions </p>
+                        <p class="card-text"><strong>Price:</strong> 6.900 OR </p>
+                        <a href="product4.html" class="btn btn-primary" style="display: grid;">View Details</a>
+                        <a href="myaccount.html" class="btn btn-secondary mt-2" style="display: grid;">Add to Wishlist</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="P5.png" class="card-img-top" alt="Antique Item">
+                    <div class="card-body">
+                        <h5 class="card-title">compass and clock </h5>
+                        <p class="card-text"> compass and clock in a wooden box</p>
+                        <p class="card-text"><strong>Price:</strong> 16.700 OR </p>
+                        <a href="product5.html" class="btn btn-primary" style="display: grid;">View Details</a>
+                        <a href="myaccount.html" class="btn btn-secondary mt-2" style="display: grid;">Add to Wishlist</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="P6.png" class="card-img-top" alt="Antique Item">
+                    <div class="card-body">
+                        <h5 class="card-title">Sprinkle</h5>
+                        <p class="card-text"> Gulab pash rose water sprinkle</p>
+                        <p class="card-text"><strong>Price:</strong> 8.000 OR</p>
+                        <a href="product6.html" class="btn btn-primary" style="display: grid;">View Details</a>
+                        <a href="myaccount.html" class="btn btn-secondary mt-2" style="display: grid;">Add to Wishlist</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="P7.png" class="card-img-top" alt="Antique Item">
+                    <div class="card-body">
+                        <h5 class="card-title">Frame</h5>
+                        <p class="card-text">Egypt mural wall hanging frame</p>
+                        <p class="card-text"><strong>Price:</strong> 4.000 OR</p>
+                        <a href="product7.html" class="btn btn-primary" style="display: grid;">View Details</a>
+                        <a href="myaccount.html" class="btn btn-secondary mt-2" style="display: grid;">Add to Wishlist</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ateeq. All rights reserved.</p>
+    </footer>
+</body>
+</html>

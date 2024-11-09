@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="stylesheet" href="theme.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .section {
+            background-color: rgba(255, 255, 255, 0.85); 
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            padding: 20px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .section:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-info {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .profile-info img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #ddd;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-info img:hover {
+            transform: scale(1.1);
+        }
+
+        .profile-info .details {
+            flex: 1;
+        }
+
+        .profile-info .details p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #4a2c2a;
+        }
+
+        .profile-info h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4a2c2a;
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .wishlist-item {
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .wishlist-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .wishlist-item img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .table th, .table td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .table {
+            margin-top: 20px;
+        }
+
+
+
+    </style>
+    <header>
+        <div class="header-container">
+            <img src="Picture1.png" alt="Ateeq Logo" class="logo">
+            <h1>My Account</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="myaccount.html">My Account</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="section">
+            <h2><i class="fas fa-user-circle"></i> Profile Information</h2>
+            <div class="profile-info">
+                <img src="profile.jpg" alt="Profile Picture">
+                <div class="details">
+                    <p><i class="fas fa-user"></i> <strong>Name:</strong> John Doe</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> johndoe@example.com</p>
+                    <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +123 456 7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 1234 Street, City, Country</p>
+                    <button class="btn btn-primary">Edit Profile</button>
+                </div>
+            </div>
+        </div>
+        <!-- Cart Section -->
+        <div class="section">
+            <h2><i class="fas fa-shopping-cart"></i> Shopping Cart</h2>
+            <table class="table table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vintage Watch</td>
+                        <td>1</td>
+                        <td>$120.00</td>
+                        <td>$120.00</td>
+                    </tr>
+                    <tr>
+                        <td>Handmade Bag</td>
+                        <td>2</td>
+                        <td>$60.00</td>
+                        <td>$120.00</td>
+                    </tr>
+                    <tr>
+                        <td>Leather Shoes</td>
+                        <td>1</td>
+                        <td>$80.00</td>
+                        <td>$80.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="text-end">
+                <p><strong>Total:</strong> $320.00</p>
+                <button class="btn btn-primary">Proceed to Checkout</button>
+            </div>
+        </div>
+        <!-- Wishlist Section -->
+        <div class="section">
+            <h2><i class="fas fa-heart"></i> My Wishlist</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="wishlist-item">
+                        <img src="Vintag_Watch.webp" alt="Vintage Watch">
+                        <h5>Vintage Watch</h5>
+                        <p><i class="fas fa-heart"></i> Added to Wishlist</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="wishlist-item">
+                        <img src="Handmade Bag.webp" alt="Handmade Bag">
+                        <h5>Handmade Bag</h5>
+                        <p><i class="fas fa-heart"></i> Added to Wishlist</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="wishlist-item">
+                        <img src="Leather Shoes.jpg" alt="Leather Shoes">
+                        <h5>Leather Shoes</h5>
+                        <p><i class="fas fa-heart"></i> Added to Wishlist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Order Tracking Section -->
+        <div class="section">
+            <h2><i class="fas fa-box"></i> Order Tracking</h2>
+            <table class="table table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Order Number</th>
+                        <th>Status</th>
+                        <th>Last Updated</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#1001</td>
+                        <td><i class="fas fa-hourglass-half"></i> Order Placed</td>
+                        <td>2024-10-01</td>
+                    </tr>
+                    <tr>
+                        <td>#1002</td>
+                        <td><i class="fas fa-truck"></i> Order Shipped</td>
+                        <td>2024-10-03</td>
+                    </tr>
+                    <tr>
+                        <td>#1003</td>
+                        <td><i class="fas fa-box-open"></i> Order Delivered</td>
+                        <td>2024-10-05</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ateeq. All rights reserved.</p>
+        <p>Email: <a href="mailto:info@ateeqart.com">info@ateeqart.com</a></p>
+    </footer>
+
+
+</body>
+
+
+</html>
